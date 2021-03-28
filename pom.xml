@@ -6,18 +6,27 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
-    <groupId>com.liuscoding</groupId>
-    <artifactId>guli_parent</artifactId>
+
+    <groupId>com.pangzhao</groupId>
+    <artifactId>guli-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>service</module>
-        <module>common</module>
-        <module>canal_client</module>
-        <module>infrastructure</module>
+        <module>guli-api-gateway</module>
+        <module>guli-canal-client</module>
+        <module>guli-common</module>
+        <module>guli-service-acl</module>
+        <module>guli-service-cms</module>
+        <module>guli-service-edu</module>
+        <module>guli-service-msm</module>
+        <module>guli-service-order</module>
+        <module>guli-service-oss</module>
+        <module>guli-service-statistics</module>
+        <module>guli-service-ucenter</module>
+        <module>guli-service-vod</module>
     </modules>
 
     <properties>
