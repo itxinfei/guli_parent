@@ -14,16 +14,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * @className: SwaggerConfig
  * @description: swagger配置
- * @author: liusCoding
- * @create: 2020-05-02 09:08
  */
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
 
     @Bean
-    public Docket docket(){
+    public Docket docket() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(true)
                 .apiInfo(apiInfo())
@@ -34,12 +31,12 @@ public class SwaggerConfig {
                 .build();
     }
 
-    public ApiInfo apiInfo(){
+    public ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("谷粒学院")
                 .description("谷粒学院接口")
                 .termsOfServiceUrl("liuscoding")
-                .contact(new Contact("liusCoding","liuscoding.cn","liuscoding@163.com"))
+                .contact(new Contact("liusCoding", "liuscoding.cn", "liuscoding@163.com"))
                 .version("1.0")
                 .build();
     }

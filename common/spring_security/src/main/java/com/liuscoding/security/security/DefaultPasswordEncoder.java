@@ -9,9 +9,6 @@ import org.springframework.stereotype.Component;
  * <p>
  * t密码的处理方法类型
  * </p>
- *
- * @author qy
- * @since 2019-11-08
  */
 @Component
 public class DefaultPasswordEncoder implements PasswordEncoder {
@@ -21,8 +18,7 @@ public class DefaultPasswordEncoder implements PasswordEncoder {
     }
 
     /**
-     * @param strength
-     *            the log rounds to use, between 4 and 31
+     * @param strength the log rounds to use, between 4 and 31
      */
     public DefaultPasswordEncoder(int strength) {
 

@@ -2,12 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>service</module>
-        <module>common</module>
-        <module>canal_client</module>
-        <module>infrastructure</module>
-    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -18,7 +12,13 @@
     <artifactId>guli_parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>guli_parent</name>
+
+    <modules>
+        <module>service</module>
+        <module>common</module>
+        <module>canal_client</module>
+        <module>infrastructure</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
@@ -59,7 +59,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -73,14 +72,12 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
-
             <!-- velocity 模板引擎, Mybatis Plus 代码生成器需要 -->
             <dependency>
                 <groupId>org.apache.velocity</groupId>
                 <artifactId>velocity-engine-core</artifactId>
                 <version>${velocity.version}</version>
             </dependency>
-
             <!--swagger-->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -93,21 +90,12 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
-
-            <!--aliyunOSS-->
-            <dependency>
-                <groupId>com.aliyun.oss</groupId>
-                <artifactId>aliyun-sdk-oss</artifactId>
-                <version>${aliyun.oss.version}</version>
-            </dependency>
-
             <!--日期时间工具-->
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${jodatime.version}</version>
             </dependency>
-
             <!--xls-->
             <dependency>
                 <groupId>org.apache.poi</groupId>
@@ -120,42 +108,35 @@
                 <artifactId>poi-ooxml</artifactId>
                 <version>${poi.version}</version>
             </dependency>
-
             <!--文件上传-->
             <dependency>
                 <groupId>commons-fileupload</groupId>
                 <artifactId>commons-fileupload</artifactId>
                 <version>${commons-fileupload.version}</version>
             </dependency>
-
             <!--commons-io-->
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
-
             <!--httpclient-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
             </dependency>
-
             <!-- JWT -->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
                 <version>${jwt.version}</version>
             </dependency>
-
-            <!--aliyun手动加载jar-->
             <dependency>
                 <groupId>com.aliyun</groupId>
                 <artifactId>aliyun-java-sdk-core</artifactId>
@@ -175,8 +156,9 @@
                 <groupId>com.aliyun</groupId>
                 <artifactId>aliyun-java-vod-upload</artifactId>
                 <version>1.4.12</version>
-                <scope>system</scope>
-                <systemPath>${project.basedir}\lib\aliyun-java-vod-upload-1.4.12.jar</systemPath>
+                <!--mvn install:install-file -DgroupId=com.aliyun -DartifactId=aliyun-java-vod-upload -Dversion=1.4.12 -Dpackaging=jar -Dfile=E:\developServer\Repository\aliyun-java-vod-upload-1.4.12.jar-->
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${project.basedir}\.doc\lib\aliyun-java-vod-upload-1.4.12.jar</systemPath>-->
             </dependency>
             <dependency>
                 <groupId>com.aliyun</groupId>
@@ -193,25 +175,21 @@
                 <artifactId>json</artifactId>
                 <version>${json.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>commons-dbutils</groupId>
                 <artifactId>commons-dbutils</artifactId>
                 <version>${commons-dbutils.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.alibaba.otter</groupId>
                 <artifactId>canal.client</artifactId>
                 <version>${canal.client.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${swagger-version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.liuscoding</groupId>
                 <artifactId>service_base</artifactId>
@@ -238,7 +216,6 @@
              </plugin>
          </plugins>
      </build>-->
-
 
     <repositories>
         <repository>

@@ -5,10 +5,7 @@ import com.liuscoding.servicebase.exceptionhandler.exception.GuiException;
 import org.springframework.stereotype.Component;
 
 /**
- * @className: MemberClientImpl
- * @description:
- * @author: liusCoding
- * @create: 2020-05-19 06:49
+ *
  */
 @Component
 public class MemberClientImpl implements MemberClient {

@@ -12,16 +12,6 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * <p>
  * 处理跨域
  * </p>
- *
- * @author qy
- * @since 2019-11-21
- */
-
-/**
- * description:
- *
- * @author wangpeng
- * @date 2019/01/02
  */
 @Configuration
 public class CorsConfig {

@@ -12,10 +12,7 @@ import java.io.IOException;
 /**
  * @className: GlobalExceptionHandler
  * @description: 全局异常处理
- * @author: liusCoding
- * @create: 2020-05-02 12:23
  */
-
 @RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {

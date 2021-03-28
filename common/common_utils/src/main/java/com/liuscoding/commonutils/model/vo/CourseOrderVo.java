@@ -7,10 +7,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * @className: CourseOrderVo
- * @description:
- * @author: liusCoding
- * @create: 2020-05-18 12:01
+ *
  */
 @Data
 public class CourseOrderVo implements Serializable {

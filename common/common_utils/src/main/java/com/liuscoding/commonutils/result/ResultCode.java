@@ -7,8 +7,6 @@ import lombok.Setter;
 
 /**
  * 响应码枚举
- *
- * @author liusCoding
  */
 @AllArgsConstructor
 @Getter

@@ -8,12 +8,8 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @className: MemberOrderVo
- * @description:
- * @author: liusCoding
- * @create: 2020-05-18 12:01
+ *
  */
-
 @Data
 public class MemberOrderVo implements Serializable {
 

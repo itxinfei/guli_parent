@@ -14,9 +14,6 @@ import java.util.Map;
  * 自定义异常处理
  *
  * <p>异常时用JSON代替HTML异常信息<p>
- *
- * @author yinjihuan
- *
  */
 public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
 
@@ -40,6 +37,7 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
 
     /**
      * 指定响应处理方法为JSON处理的方法
+     *
      * @param errorAttributes
      */
     @Override
@@ -49,6 +47,7 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
 
     /**
      * 根据code获取对应的HttpStatus
+     *
      * @param errorAttributes
      */
     @Override

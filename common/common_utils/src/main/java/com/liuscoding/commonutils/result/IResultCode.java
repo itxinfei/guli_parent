@@ -2,7 +2,6 @@ package com.liuscoding.commonutils.result;
 
 /**
  * 响应码和响应信息定义
- * @author  liuscoding
  */
 public interface IResultCode {
 

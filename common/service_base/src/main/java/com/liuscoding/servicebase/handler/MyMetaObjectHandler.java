@@ -8,11 +8,7 @@ import java.util.Date;
 
 /**
  * @className: MyMetaObjectHandler
- * @description:
- * @author: liusCoding
- * @create: 2020-05-02 12:16
  */
-
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 

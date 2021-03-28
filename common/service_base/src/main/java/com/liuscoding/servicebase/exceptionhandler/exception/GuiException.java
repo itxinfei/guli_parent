@@ -7,8 +7,6 @@ import lombok.Data;
 /**
  * @className: GuliException
  * @description: 自定义异常处理
- * @author: liusCoding
- * @create: 2020-05-02 13:01
  */
 
 @Data
