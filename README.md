@@ -34,7 +34,7 @@ QQ技术交流群：863662849<a target="_blank" href="https://qm.qq.com/cgi-bin/
 
 ### 二、业务架构图
 
-![](.doc/谷粒学院业务架构.png)
+![](Doc/谷粒学院业务架构.png)
 
 ### 三、技术架构图
-![](.doc/谷粒学院技术架构.png)
+![](Doc/谷粒学院技术架构.png)
